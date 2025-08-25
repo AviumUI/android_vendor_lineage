@@ -45,6 +45,7 @@ function breakfast()
     target=$1
     local variant=$2
     source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release
+    ENABLE_SERVICE=true
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
@@ -62,6 +63,7 @@ function breakfast()
             lunch lineage_$target-$aosp_target_release-$variant
         fi
     fi
+    ENABLE_SERVICE=false
     return $?
 }
 
