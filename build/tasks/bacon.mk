@@ -14,16 +14,16 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# Avium OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+AVIUM_TARGET_PACKAGE := $(PRODUCT_OUT)/$(AVIUM_PACKAGE_NAME).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-$(LINEAGE_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
-	$(hide) $(SHA256) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).sha256sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+$(AVIUM_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AVIUM_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(AVIUM_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AVIUM_TARGET_PACKAGE).sha256sum
+	@echo "Package Complete: $(AVIUM_TARGET_PACKAGE)" >&2
 
 .PHONY: bacon
-bacon: $(LINEAGE_TARGET_PACKAGE) $(DEFAULT_GOAL)
+bacon: $(AVIUM_TARGET_PACKAGE) $(DEFAULT_GOAL)
