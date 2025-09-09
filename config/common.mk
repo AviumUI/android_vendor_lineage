@@ -126,7 +126,7 @@ PRODUCT_PACKAGES += \
 ifeq ($(PRODUCT_IS_ATV),)
 PRODUCT_PACKAGES += \
     ExactCalculator \
-    Jelly
+    Via
 endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
