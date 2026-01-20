@@ -20,5 +20,8 @@ TARGET_FORCE_OTA_PACKAGE := true
 # Disable soong defined system image for now
 USE_SOONG_DEFINED_SYSTEM_IMAGE := false
 
+# ADB
+WITH_ADB_INSECURE=1
+
 # Bpf
 PRODUCT_PRODUCT_PROPERTIES += ro.bpf.kver_override=5.10.239
