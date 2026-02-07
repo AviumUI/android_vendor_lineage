@@ -16,6 +16,23 @@
       "message": "Comment removed by: uwugl; Reason:  ",
       "revId": "4b89fdaa14ff29a2943576698f2207f1780078e3",
       "serverId": "8582d5b1-6499-4a2f-9eb8-9aae0e0bb54f"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25390ac8_f12558dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2026-02-07T16:39:51Z",
+      "side": 1,
+      "message": "Please drop this in manifests as well",
+      "revId": "4b89fdaa14ff29a2943576698f2207f1780078e3",
+      "serverId": "8582d5b1-6499-4a2f-9eb8-9aae0e0bb54f"
     }
   ]
 }
