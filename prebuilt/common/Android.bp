@@ -11,3 +11,4 @@ prebuilt_etc_xml {
     src: "etc/lineage-component-overrides.xml",
     sub_dir: "sysconfig",
 }
+
